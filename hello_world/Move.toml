@@ -1,0 +1,14 @@
+[package]
+name = "hello_world"
+edition = "2024"         # edition = "legacy" to use legacy (pre-2024) Move
+# license = ""           # e.g., "MIT", "GPL", "Apache 2.0"
+# authors = ["..."]      # e.g., ["Joe Smith (joesmith@noemail.com)", "John Snow (johnsnow@noemail.com)"]
+
+[dependencies]
+Sui = {git = "https://github.com/Mystenlabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet"}
+# Read more about the package management system options:
+# https://docs.sui.io/guides/developer/packages/move-package-management
+  
+
+  [addresses]
+  hello_world = "0x0"
