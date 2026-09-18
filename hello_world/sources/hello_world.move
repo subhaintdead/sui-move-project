@@ -1,7 +1,7 @@
 
 module ctrpkg::ctr_module {
     public struct Counter has key {
-        id: UID;
+        id: UID,
         count: u64
     }
 }
@@ -10,9 +10,11 @@ module ctrpkg::ctr_module {
 
 public fun create_counter(context: &mut TxContext) {
     let counter = Counter {
-        id: object::new(context);
+        id: object::new(context),
         count: 0
 
+    };
+    transfer::share_object(counter);
     }
-    transfer::share_object(counter)
-    }
+    
+    
