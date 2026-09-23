@@ -17,4 +17,7 @@ public fun create_counter(context: &mut TxContext) {
     transfer::share_object(counter);
     }
     
-    
+
+    public fun increment(counter: &mut Counter) {
+        counter.count = counter.count + 1;
+    }
