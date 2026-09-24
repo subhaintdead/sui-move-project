@@ -53,3 +53,5 @@ make sure you have vite, rust/cargo, sui move installed (refer to https://docs.s
 <br>
 <br>
 (if this feels clunky to you, it is)
+
+learning material: mysten's demos and docs
