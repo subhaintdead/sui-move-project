@@ -79,12 +79,12 @@ function Counter() {
 
         {account ? (
           <>
-            <button onClick={handleincrement} disabled={load}>add +1</button>
 
             {count !== null && (
               <p style={{ fontSize: '48px', margin: '20px' }}>{count}</p>
             )}
 
+            <button onClick={handleincrement} disabled={load}>add +1</button>
 
             {lasttx && (
               <p style={{ fontSize: '12px', color: 'gray' }}>
