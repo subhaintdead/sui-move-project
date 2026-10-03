@@ -55,3 +55,5 @@ make sure you have vite, rust/cargo, sui move installed (refer to https://docs.s
 (if this feels clunky to you, it is)
 
 learning material: mysten's demos and docs
+
+**AI USAGE: some ai has been used. however, i DID NOT use ai code editors**
